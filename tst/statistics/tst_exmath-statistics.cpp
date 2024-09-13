@@ -8,7 +8,7 @@
 
 TEST_CASE()
 {
-  using T = exmath::statistics::max_min_mean_value_calculator_t;
+  using T = exmath::statistics::BatchStatistics;
 
   double values[10] = {
     0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0,
@@ -72,7 +72,7 @@ TEST_CASE()
 
 TEST_CASE()
 {
-  using T = exmath::statistics::max_min_mean_value_calculator_t;
+  using T = exmath::statistics::BatchStatistics;
 
   double values[10] = {
     0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0,
@@ -131,7 +131,7 @@ TEST_CASE()
 
 TEST_CASE()
 {
-  using T = exmath::statistics::max_min_mean_value_calculator_t;
+  using T = exmath::statistics::BatchStatistics;
 
   double values[10] = {
     0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0,
@@ -237,7 +237,7 @@ TEST_CASE()
 
 TEST_CASE()
 {
-  using T = exmath::statistics::max_min_mean_value_calculator_t;
+  using T = exmath::statistics::BatchStatistics;
 
   T sig_a{ test_data::signal_a::values };
   REQUIRE(sig_a.get_max() == Approx(test_data::signal_a::max));
