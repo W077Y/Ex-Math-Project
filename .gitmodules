@@ -1,0 +1,3 @@
+[submodule "ex-math"]
+	path = ex-math
+	url = https://github.com/W077Y/Ex-Math.git
