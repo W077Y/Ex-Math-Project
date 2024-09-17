@@ -14,8 +14,6 @@ TEST_CASE()
     0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0,
   };
   std::span<double> sp_1{ &values[0], 3 };
-  std::span<double> sp_2{ &values[3], 3 };
-  std::span<double> sp_3{ &values[6], 3 };
 
   T blk_1{};
 
